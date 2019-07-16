@@ -9,5 +9,5 @@ RUN apt-get update \
     && mkdir /work
 COPY migrate.sh /work/migrate.sh
 WORKDIR /work
-CMD ["/bin/bash","migrate.sh"]
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]
+ENTRYPOINT ["/bin/bash migrate.sh"]
