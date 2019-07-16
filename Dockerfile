@@ -10,3 +10,4 @@ RUN apt-get update \
 COPY migrate.sh /work/migrate.sh
 WORKDIR /work
 CMD ["/bin/bash","migrate.sh"]
+ENTRYPOINT ["/bin/bash"]
