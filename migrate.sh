@@ -51,7 +51,7 @@ git svn clone $URL --no-metadata -A svn-authors.txt --stdlayout ./git
 
 cd ./git
 echo -n "Enter the Git web URL and press [ENTER]: "
-read $GITURL
+read GITURL
 git remote rename origin old-origin
 git remote add origin $GITURL
 git push -u origin --all
