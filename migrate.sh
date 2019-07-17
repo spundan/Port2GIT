@@ -53,7 +53,7 @@ cd ./git
 echo -n "Enter the Git web URL and press [ENTER]: "
 read $GITURL
 git remote rename origin old-origin
-git remote add origin https://gitlab.com/velsof-php/cottage-emporium-ccic.git
+git remote add origin $GITURL
 git push -u origin --all
 git push -u origin --tags
 # git remote add origin $GITURL
